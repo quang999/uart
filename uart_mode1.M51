@@ -1,0 +1,151 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/01/2022  23:34:53  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj TO uart_mode1 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
+
+
+LINK MAP OF MODULE:  uart_mode1 (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0003H     UNIT         _DATA_GROUP_
+            IDATA   000BH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     002DH     UNIT         ?C?LIB_CODE
+            CODE    0030H     0020H     UNIT         ?PR?_UART_WRITE_TEXT?MAIN
+            CODE    0050H     0014H     UNIT         ?CO?MAIN
+            CODE    0064H     0011H     UNIT         ?PR?UART_INIT?MAIN
+            CODE    0075H     000EH     UNIT         ?PR?MAIN?MAIN
+            CODE    0083H     000CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0008H     UNIT         ?PR?_UART_WRITE?MAIN
+            CODE    0097H     0006H     UNIT         ?PR?UART_DATA_READY?MAIN
+            CODE    009DH     0005H     UNIT         ?PR?UART_READ?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   uart_mode1 (MAIN)
+
+
+SEGMENT                             DATA_GROUP 
+  +--> CALLED SEGMENT             START    LENGTH
+-------------------------------------------------
+?C_C51STARTUP                     -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                     -----    -----
+  +--> ?PR?UART_INIT?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_UART_WRITE_TEXT?MAIN
+
+?PR?_UART_WRITE_TEXT?MAIN         0008H    0003H
+  +--> ?PR?_UART_WRITE?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  uart_mode1 (MAIN)
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/01/2022  23:34:53  PAGE 2
+
+
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  C:0075H         PUBLIC        main
+  D:0099H         PUBLIC        SBUF
+  C:0097H         PUBLIC        uart_data_ready
+  D:0089H         PUBLIC        TMOD
+  C:009DH         PUBLIC        uart_read
+  C:008FH         PUBLIC        _uart_write
+  D:008DH         PUBLIC        TH1
+  B:0098H.7       PUBLIC        SM0
+  B:0098H.6       PUBLIC        SM1
+  C:0064H         PUBLIC        uart_init
+  B:0088H.6       PUBLIC        TR1
+  B:0098H.4       PUBLIC        REN
+  C:0030H         PUBLIC        _uart_write_text
+  -------         PROC          UART_INIT
+  C:0064H         LINE#         5
+  C:0064H         LINE#         7
+  C:0068H         LINE#         8
+  C:006BH         LINE#         9
+  C:006EH         LINE#         10
+  C:0070H         LINE#         11
+  C:0072H         LINE#         12
+  C:0074H         LINE#         13
+  -------         ENDPROC       UART_INIT
+  -------         PROC          UART_DATA_READY
+  C:0097H         LINE#         16
+  C:0097H         LINE#         17
+  C:009CH         LINE#         18
+  -------         ENDPROC       UART_DATA_READY
+  -------         PROC          UART_READ
+  C:009DH         LINE#         20
+  C:009DH         LINE#         21
+  C:009FH         LINE#         22
+  C:00A1H         LINE#         23
+  -------         ENDPROC       UART_READ
+  -------         PROC          _UART_WRITE
+  D:0007H         SYMBOL        c
+  C:008FH         LINE#         26
+  C:008FH         LINE#         27
+  C:0092H         LINE#         28
+  C:0094H         LINE#         29
+  C:0096H         LINE#         30
+  -------         ENDPROC       _UART_WRITE
+  -------         PROC          _UART_WRITE_TEXT
+  D:0008H         SYMBOL        str
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0030H         LINE#         32
+  C:0036H         LINE#         33
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/01/2022  23:34:53  PAGE 3
+
+
+  C:0038H         LINE#         34
+  C:0049H         LINE#         35
+  C:004CH         LINE#         36
+  C:004DH         LINE#         37
+  C:004FH         LINE#         38
+  -------         ENDPROC       _UART_WRITE_TEXT
+  -------         PROC          MAIN
+  C:0075H         LINE#         41
+  C:0075H         LINE#         44
+  C:0078H         LINE#         45
+  C:0081H         LINE#         48
+  C:0081H         LINE#         51
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?CLDOPTR
+  C:0003H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?MAIN
+
+Program Size: data=12.0 xdata=0 code=162
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)
