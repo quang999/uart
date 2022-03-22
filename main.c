@@ -1,7 +1,7 @@
 #include<main.h>
 #include<uart_mode1.h>
 
-
+// 
 void uart_init(){
 	//khoi tao uart mode 1 ,9600 baud
 	SM0=0;SM1=1;// chon uart mode 1
@@ -9,7 +9,11 @@ void uart_init(){
 	TH1=0xFD; // toc do baud 9600
 	TR1=1;//timer 1 bat dau chay
 	TI=1; // san sang gui du lieu
-	REN=1;//cho phep nhan du lieu// 793485798753847593487
+
+	REN=1;//cho phep nhan du lieu
+
+
+
 	}
 
 
@@ -50,4 +54,4 @@ void main(){
 		//	P2=uart_read();
 		}
 		}
-	
+
