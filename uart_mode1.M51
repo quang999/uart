@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        03/01/2022  23:34:53  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/22/2022  21:57:10  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-C:\KEIL\C51\BIN\BL51.EXE main.obj TO uart_mode1 RAMSIZE (256)
+C:\KEIL\C51\BIN\BL51.EXE main.obj, .\uart_mode1.obj TO uart_mode1 RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -10,6 +10,7 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   main.obj (MAIN)
+  .\uart_mode1.obj (UART_MODE1)
   C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
   C:\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
 
@@ -58,10 +59,10 @@ SEGMENT                             DATA_GROUP
 
 
 
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/22/2022  21:57:10  PAGE 2
+
+
 SYMBOL TABLE OF MODULE:  uart_mode1 (MAIN)
-BL51 BANKED LINKER/LOCATER V6.22                                                      03/01/2022  23:34:53  PAGE 2
-
-
 
   VALUE           TYPE          NAME
   ----------------------------------
@@ -90,52 +91,56 @@ SYMBOL TABLE OF MODULE:  uart_mode1 (MAIN)
   C:006BH         LINE#         9
   C:006EH         LINE#         10
   C:0070H         LINE#         11
-  C:0072H         LINE#         12
-  C:0074H         LINE#         13
+  C:0072H         LINE#         13
+  C:0074H         LINE#         17
   -------         ENDPROC       UART_INIT
   -------         PROC          UART_DATA_READY
-  C:0097H         LINE#         16
-  C:0097H         LINE#         17
-  C:009CH         LINE#         18
+  C:0097H         LINE#         20
+  C:0097H         LINE#         21
+  C:009CH         LINE#         22
   -------         ENDPROC       UART_DATA_READY
   -------         PROC          UART_READ
-  C:009DH         LINE#         20
-  C:009DH         LINE#         21
-  C:009FH         LINE#         22
-  C:00A1H         LINE#         23
+  C:009DH         LINE#         24
+  C:009DH         LINE#         25
+  C:009FH         LINE#         26
+  C:00A1H         LINE#         27
   -------         ENDPROC       UART_READ
   -------         PROC          _UART_WRITE
   D:0007H         SYMBOL        c
-  C:008FH         LINE#         26
-  C:008FH         LINE#         27
-  C:0092H         LINE#         28
-  C:0094H         LINE#         29
-  C:0096H         LINE#         30
+  C:008FH         LINE#         30
+  C:008FH         LINE#         31
+  C:0092H         LINE#         32
+  C:0094H         LINE#         33
+  C:0096H         LINE#         34
   -------         ENDPROC       _UART_WRITE
   -------         PROC          _UART_WRITE_TEXT
   D:0008H         SYMBOL        str
   -------         DO            
   D:0006H         SYMBOL        i
   -------         ENDDO         
-  C:0030H         LINE#         32
-  C:0036H         LINE#         33
-BL51 BANKED LINKER/LOCATER V6.22                                                      03/01/2022  23:34:53  PAGE 3
+  C:0030H         LINE#         36
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/22/2022  21:57:10  PAGE 3
 
 
-  C:0038H         LINE#         34
-  C:0049H         LINE#         35
-  C:004CH         LINE#         36
-  C:004DH         LINE#         37
-  C:004FH         LINE#         38
+  C:0036H         LINE#         37
+  C:0038H         LINE#         38
+  C:0049H         LINE#         39
+  C:004CH         LINE#         40
+  C:004DH         LINE#         41
+  C:004FH         LINE#         42
   -------         ENDPROC       _UART_WRITE_TEXT
   -------         PROC          MAIN
-  C:0075H         LINE#         41
-  C:0075H         LINE#         44
-  C:0078H         LINE#         45
-  C:0081H         LINE#         48
-  C:0081H         LINE#         51
+  C:0075H         LINE#         45
+  C:0075H         LINE#         48
+  C:0078H         LINE#         49
+  C:0081H         LINE#         52
+  C:0081H         LINE#         55
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
+
+  -------         MODULE        UART_MODE1
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  -------         ENDMOD        UART_MODE1
 
   -------         MODULE        ?C?CLDOPTR
   C:0003H         PUBLIC        ?C?CLDOPTR

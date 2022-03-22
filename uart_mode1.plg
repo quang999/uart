@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\admin\Desktop\uart\uart_mode1.uvproj
+Project File Date:  03/01/2022
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file 'uart_mode1.h'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?MAIN
+Program Size: data=12.0 xdata=0 code=162
+creating hex file from "uart_mode1"...
+"uart_mode1" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file 'uart_mode1.h'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?MAIN
+Program Size: data=17.1 xdata=0 code=1531
+creating hex file from "uart_mode1"...
+"uart_mode1" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?MAIN
+Program Size: data=17.1 xdata=0 code=1531
+creating hex file from "uart_mode1"...
+"uart_mode1" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?MAIN
+Program Size: data=17.1 xdata=0 code=1531
+creating hex file from "uart_mode1"...
+"uart_mode1" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?MAIN
+Program Size: data=17.1 xdata=0 code=1531
+creating hex file from "uart_mode1"...
+"uart_mode1" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file 'uart_mode1.h'
+main.c(47): warning C206: 'sin': missing function-prototype
+main.c(47): error C267: 'sin': requires ANSI-style prototype
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file 'uart_mode1.h'
+main.c(47): warning C206: 'sin': missing function-prototype
+main.c(47): error C267: 'sin': requires ANSI-style prototype
+compiling uart_mode1.c...
+E:\thuc tap tot nghiep\thuc hanh do an\lib\uart_mode1.c(2): warning C318: can't open file 'uart_mode1.h'
+E:\thuc tap tot nghiep\thuc hanh do an\lib\uart_mode1.c(54): warning C316: unterminated conditionals
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file 'uart_mode1.h'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?MAIN
+Program Size: data=12.0 xdata=0 code=162
+creating hex file from "uart_mode1"...
+"uart_mode1" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file 'uart_mode1.h'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?MAIN
+Program Size: data=12.0 xdata=0 code=162
+creating hex file from "uart_mode1"...
+"uart_mode1" - 0 Error(s), 3 Warning(s).

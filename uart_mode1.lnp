@@ -1,3 +1,4 @@
-"main.obj" 
+"main.obj",
+".\uart_mode1.obj" 
 TO "uart_mode1" 
 RAMSIZE(256) 
