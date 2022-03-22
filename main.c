@@ -9,7 +9,7 @@ void uart_init(){
 	TH1=0xFD; // toc do baud 9600
 	TR1=1;//timer 1 bat dau chay
 	TI=1; // san sang gui du lieu
-	REN=1;//cho phep nhan du lieu
+	REN=1;//cho phep nhan du lieu// 793485798753847593487
 	}
 
 
@@ -50,4 +50,4 @@ void main(){
 		//	P2=uart_read();
 		}
 		}
-		
+	
